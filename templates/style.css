@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+   margin:0;
+   padding:0;
+   outline:none;
+   box-sizing:'border-box'
+   font-family:'Poppins',sans-serif
+}
+
+body{
+       display:flex;
+       flex-direction:column;
+       justify-content:center;
+       min-height:100vh;
+       padding:40px;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKlS0WNPTiAMGqDZ4hmqWOQY9DLd8o8D2h-0DvSeivwqqLqPgaTulWcQ2IrkbugVuBLY&usqp=CAU");
+}
+.container {
+
+      max-width: 800px;
+      background: #fff
+      width: 800px;
+      padding: 20px 40px 10px 40px;
+      background-color: #D5DBE1;
+}

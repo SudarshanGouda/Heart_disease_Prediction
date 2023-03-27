@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heart Disease Prediction</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <!-- Intro -->
+
+        <div class="alert alert-dark" role="alert">
+            <h4 class="alert-heading text-center">HEART DISEASE PREDICTION</h4>
+            <p>11 clinical features for predicting heart disease events.
+              This project helps to predict whether the patient has Heart Disease or not.</p>
+            <div class="container text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsdbBncoFGHz3ZP3z-TXEJqjn6sAm8C6RzSw&usqp=CAU">
+
+            </div>
+
+            <hr>
+            <p class="mb-0">Can find the project in GitHub. Here is the link for the <a href="https://github.com/SudarshanGouda/Heart_disease_Prediction">GitHub</a>.The goal of this project is to analyze the
+                factors that can effect the Health of an heart, and also creating a model which will predict the chances of Heart Disease.</p>
+        </div>
+      <!-- Form -->
+        <h3 class='text-center'>HEART DISEASE PREDICTION</h3>
+        <div class="container my-4">
+            <form action="/" method="POST">
+
+                <!-- Model -->
+                <div class="form-group">
+                    <label for="Model">Select ML Modal</label>
+                    <select class="form-control" id="Model" name="Model">
+                            <option value="Random_Forest_model">Random Forest</option>
+                            <option value="SVM_model">SVM</option>
+                            <option value="CatBoost_model">CatBoost</option>
+                            <option value="Neural_network_model">Neural Network</option>
+                            <option value="LDA_model">Linear Discriminant Analysis</option>
+                        </select>
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="Age">Enter Your Age</label>
+                    <input type="text" class="form-control" id="Age" name="Age">
+                </div>
+
+                <!-- Sex -->
+                <div class="form-group">
+                    <label for="Sex">Select Gender</label>
+                    <select class="form-control" id="Sex" name="Sex">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                </div>
+
+                <!-- RestingBP -->
+                <div class="form-group">
+                    <label for="RestingBP">Enter RestingBP</label>
+                    <input type="text" class="form-control" id="RestingBP" name="RestingBP">
+                </div>
+
+                <!-- Cholesterol -->
+                <div class="form-group">
+                    <label for="Cholesterol">Enter Cholesterol</label>
+                    <input type="text" class="form-control" id="Cholesterol" name="Cholesterol">
+                </div>
+
+                <!-- FastingBS -->
+                <div class="form-group">
+                    <label for="FastingBS">Enter FastingBS</label>
+                    <input type="text" class="form-control" id="FastingBS" name="FastingBS">
+                </div>
+
+                <!-- MaxHR -->
+                <div class="form-group">
+                    <label for="MaxHR">Enter MaxHR</label>
+                    <input type="text" class="form-control" id="MaxHR" name="MaxHR">
+                </div>
+
+                <!-- ExerciseAngina -->
+                <div class="form-group">
+                    <label for="ExerciseAngina">Select ExerciseAngina</label>
+                    <select class="form-control" id="ExerciseAngina" name="ExerciseAngina">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                </div>
+
+                <!-- Oldpeak -->
+                <div class="form-group">
+                    <label for="Oldpeak">Enter Oldpeak</label>
+                    <input type="text" class="form-control" id="Oldpeak" name="Oldpeak">
+                </div>
+
+                <!-- ST_Slope -->
+                <div class="form-group">
+                    <label for="ST_Slope">Select ST</label>
+                    <select class="form-control" id="ST_Slope" name="ST_Slope">
+                            <option value="ST_Slope_Down">Down</option>
+                            <option value="ST_Slope_Flat">Flat</option>
+                            <option value="ST_Slope_Up">Up</option>
+                        </select>
+                </div>
+
+                <!-- RestingECG -->
+                <div class="form-group">
+                    <label for="RestingECG">Select RestingECG</label>
+                    <select class="form-control" id="RestingECG" name="RestingECG">
+                            <option value="RestingECG_LVH">LVH</option>
+                            <option value="RestingECG_Normal">Normal</option>
+                            <option value="RestingECG_ST">ST</option>
+                        </select>
+                </div>
+
+                <!-- ChestPainType -->
+                <div class="form-group" >
+                    <label for="ChestPainType">Select RestingECG</label>
+                    <select class="form-control" id="ChestPainType" name="ChestPainType">
+                            <option value="ChestPainType_ASY">ASY</option>
+                            <option value="ChestPainType_ATA">ATA</option>
+                            <option value="ChestPainType_NAP">NAP</option>
+                            <option value="ChestPainType_TA">TA</option>
+                        </select>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+  </body>
